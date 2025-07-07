@@ -11,7 +11,7 @@ def add_new_employee(employee_records,id,name,age,dept,salary):
 
 
 def del_employee(employee_records,id):
-   del employee_records["id1"]
+   del employee_records[id]
 
    return employee_records
 
@@ -30,6 +30,6 @@ employee_records={
 }
 
 add_new_employee(employee_records,"id5","raja",55,"ece","1000")
-# get_employee_details(employee_records,"id1")
-del_employee(employee_records,"id1")
+get_employee_details(employee_records,"id1")
+del_employee(employee_records,"id5")
 print(employee_records)
